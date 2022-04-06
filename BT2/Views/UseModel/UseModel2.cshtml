@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Register2";
+}
+
+@*<h2>Thông tin sinh viên đã đăng kí</h2>
+MSSV : @ViewBag.Mssv
+<br />
+Tên : @ViewBag.Ten
+<br />
+Điểm : @ViewBag.Diem
+<br />*@
+
+
+
+<fieldset>
+    <legend>Thông tin sinh viên đã đăng kí :</legend>
+    <label for="fname">Mã số sinh viên : </label>
+    @ViewBag.Mssv <br />
+    <label for="fname">Tên sinh viên : </label>
+    @ViewBag.Ten <br />
+    <label for="fname">Điểm trung bình : </label>
+    @ViewBag.Diem
+    <br />
+    <a href="#"> @Html.ActionLink("Quay lại", "UseModel/UseModel")</a>
+
+   
+</fieldset>
