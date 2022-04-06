@@ -121,10 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\UseActionController.cs" />
-    <Compile Include="Controllers\UsegFormCollectionController.cs" />
-    <Compile Include="Controllers\UseModelController.cs" />
-    <Compile Include="Controllers\UseRequestController.cs" />
+    <Compile Include="Controllers\PhepToan_61134311Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -167,10 +164,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\UseRequest\UseRequest.cshtml" />
-    <Content Include="Views\UseAction\UseArguments.cshtml" />
-    <Content Include="Views\UsegFormCollection\UseFormCollection.cshtml" />
-    <Content Include="Views\UseModel\UseModel.cshtml" />
+    <Content Include="Views\PhepToan_61134311\UseArguments.cshtml" />
+    <Content Include="Views\PhepToan_61134311\UseFormCollection.cshtml" />
+    <Content Include="Views\PhepToan_61134311\UseModel.cshtml" />
+    <Content Include="Views\PhepToan_61134311\UseRequest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

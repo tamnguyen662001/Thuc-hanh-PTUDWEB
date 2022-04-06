@@ -8,17 +8,17 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{149DD008-86A8-4377-BC62-92F6392D4346}</ProjectGuid>
+    <ProjectGuid>{0B892E74-17A8-4860-A33A-C7B7B9F3C0AD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BT2</RootNamespace>
-    <AssemblyName>BT2</AssemblyName>
+    <RootNamespace>BT4</RootNamespace>
+    <AssemblyName>BT4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44355</IISExpressSSLPort>
+    <IISExpressSSLPort>44395</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -120,15 +120,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GuiMail_61134311Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RequestController.cs" />
-    <Compile Include="Controllers\UseActionController.cs" />
-    <Compile Include="Controllers\UseFormCollectionController.cs" />
-    <Compile Include="Controllers\UseModelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\UseFormCollection.cs" />
+    <Compile Include="Models\MailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,14 +164,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\UseFormCollection\UseFormCollection.cshtml" />
-    <Content Include="Views\UseFormCollection\UseFormCollection2.cshtml" />
-    <Content Include="Views\Request\UseRequest.cshtml" />
-    <Content Include="Views\Request\UseRequest2.cshtml" />
-    <Content Include="Views\UseAction\UseAction.cshtml" />
-    <Content Include="Views\UseAction\UseAction2.cshtml" />
-    <Content Include="Views\UseModel\UseModel.cshtml" />
-    <Content Include="Views\UseModel\UseModel2.cshtml" />
+    <Content Include="Views\Home\Complete.cshtml" />
+    <Content Include="Views\GuiMail_61134311\Index.cshtml" />
+    <Content Include="Views\GuiMail_61134311\Complete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -208,9 +200,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61337</DevelopmentServerPort>
+          <DevelopmentServerPort>64355</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44355/</IISUrl>
+          <IISUrl>https://localhost:44395/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
