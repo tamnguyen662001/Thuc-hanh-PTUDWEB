@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "SendMail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .content {
+        margin: 50px auto;
+        width: 50%;
+        border: 3px solid;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .EmpImg img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+</style>
+
+
+
+
+@using (Html.BeginForm("SendMail", "SendMail", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="content">
+
+
+        <div style="padding: 50px">
+            <div style="display: flex; justify-content: center;">
+                <div>
+                    <fieldset>
+                        <legend>ỨNG DỤNG GỬI MAIL </legend>
+
+                        <table>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Mail </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="From" value="tam.nlt.61cntt@ntu.edu.vn" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Mật khẩu </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Password" value="tam662001" /></td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Mmail </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="To" value="duy.nk.61cntt@ntu.edu.vn" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Tiêu đề </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Subject" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Nội dung </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Body" /></td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding-right:100px"><input type="submit" value="Gửi" /></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    @*<a href="#"> @Html.ActionLink("Quay lại", "Index")</a>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+

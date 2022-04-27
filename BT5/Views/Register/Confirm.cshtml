@@ -1,0 +1,80 @@
+﻿@model BT5.Models.EmployerModel
+@{
+    ViewBag.Title = "Confirm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Confirm</h2>
+
+
+<style>
+    .content {
+        margin: 50px auto;
+        width: 50%;
+        border: 3px solid;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .EmpImg img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+</style>
+
+<div class="content">
+    <div class="EmpImg">
+        <img src="@ViewBag.Avatar" alt="Alternate Text" />
+    </div>
+
+    <div style="padding: 50px">
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <fieldset>
+                    <legend>THÔNG TIN NHÂN VIÊN </legend>
+
+                    <table>
+                        <tr>
+                            <td style="padding-right: 10px; padding-bottom: 10px">Mã nhân viên: </td>
+                            <td style="padding-bottom: 10px"><span>@ViewBag.EmpID</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 10px; padding-bottom: 10px">Họ tên: </td>
+                            <td style="padding-bottom: 10px"><span>@ViewBag.Name</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 10px; padding-bottom: 10px">Ngày sinh: </td>
+                            <td style="padding-bottom: 10px"><span>@ViewBag.BirthOfDate</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 10px; padding-bottom: 10px">Email: </td>
+                            <td style="padding-bottom: 10px"><span>@ViewBag.Email</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 10px; padding-bottom: 10px">Mật khẩu: </td>
+                            <td style="padding-bottom: 10px"><span>@ViewBag.Password</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 10px; padding-bottom: 10px">Đơn vị: </td>
+                            <td style="padding-bottom: 10px"><span>@ViewBag.Department</span></td>
+                        </tr>
+                        @*<tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Ảnh đại diện: </td>
+                                <img src="@ViewBag.Avatar" alt="Alternate Text" />
+                            </tr>*@
+
+                    </table>
+                </fieldset>
+                <a href="#"> @Html.ActionLink("Quay lại", "Register")</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

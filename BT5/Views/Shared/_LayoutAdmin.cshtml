@@ -15,15 +15,15 @@
     <div id="banner"><img src=@ViewBag.image /></div>
     <div id="menu">
         <div>
-            @Html.ActionLink("TRANG CHỦ", "Default", "", htmlAttributes: new
+            @Html.ActionLink("TRANG CHỦ", "../Home/index", "index", htmlAttributes: new
            { @class = "a" }) &nbsp;|&nbsp;
-            9
-            @Html.ActionLink("ĐĂNG KÝ", "RegisterEmp", "BTTH/RegisterEmp",
+            
+            @Html.ActionLink("ĐĂNG KÝ", "../Register/Register", "Register",
            new { @class = "a" })&nbsp;|&nbsp;
-            @Html.ActionLink("GỬI EMAIL", "SendMail", "", new
+            @Html.ActionLink("GỬI EMAIL", "../SendMail/SendMail", "SendMail", new
            { @class = "a" }) &nbsp;|&nbsp;
-            @Html.ActionLink("THAY ĐỔI BANNER", "ChangeBanner",
-           "BTTH/ChangeBanner", new { @class = "a" })
+            @Html.ActionLink("THAY ĐỔI BANNER", "../ChangeBanner/ChangeBanner",
+           "ChangeBanner", new { @class = "a" })
             <hr style="margin-top:0px;" />
         </div>
     </div>

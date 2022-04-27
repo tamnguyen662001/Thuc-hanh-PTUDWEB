@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Register</h2>
+
+@using (Html.BeginForm("Register", "Register", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+
+
+    <form style="padding: 10px;display: flex; justify-content: center" action="/Register/Confirm">
+        <div style="padding: 50px">
+            <div style="display: flex; justify-content: center;">
+                <div style="border: 1px solid black;padding: 20px">
+                    <fieldset>
+                        <legend>ĐĂNG KÍ THÔNG TIN NHÂN VIÊN</legend>
+
+                        <table>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Mã nhân viên: </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="EmpID" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Họ tên: </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Name" /></td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Email: </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Email" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Mật khẩu: </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Password" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Đơn vị: </td>
+                                <td style="padding-bottom: 10px"><input type="text" name="Department" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Ngày sinh: </td>
+                                <td style="padding-bottom: 10px"><input type="date" name="BirthOfDate" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 10px; padding-bottom: 10px">Ảnh đại diện: </td>
+                                <td style="padding-bottom: 10px"><input type="file" name="Avatar" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right:100px"><input type="submit" value="Đăng ký" /></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </form>
+
+}

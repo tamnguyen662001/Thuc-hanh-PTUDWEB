@@ -11,7 +11,8 @@ namespace BaiTap6_61134311.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class PhongBan
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,7 +20,8 @@ namespace BaiTap6_61134311.Models
         {
             this.NhanViens = new HashSet<NhanVien>();
         }
-    
+
+        [Display(Name = "Mã phòng ban")]
         public string MaPB { get; set; }
         public string TenPB { get; set; }
     
