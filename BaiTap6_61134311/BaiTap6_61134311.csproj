@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GioithieuController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NhanViens_61134311Controller.cs" />
     <Compile Include="Global.asax.cs">
@@ -169,6 +170,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\40831873_543916202729434_4450773230436745216_n.jpg" />
+    <Content Include="Images\51206387_630273767427010_3269003414050177024_n.jpg" />
+    <Content Include="Images\82841613_875346116253106_3509049780468711424_n.jpg" />
+    <Content Include="Images\83059941_875345919586459_1756525543982891008_n.jpg" />
+    <Content Include="Images\83154058_875346019586449_6631370517943156736_n.jpg" />
+    <Content Include="Images\83666312_875345882919796_5688188415477022720_n.jpg" />
+    <Content Include="Images\83756519_877291152725269_4117981211379367936_n.jpg" />
     <Content Include="Models\ModelQLNV_61134311.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelQLNV_61134311.Context.cs</LastGenOutput>
@@ -219,6 +227,9 @@
     <Content Include="Views\NhanViens_61134311\Edit.cshtml" />
     <Content Include="Views\NhanViens_61134311\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Gioithieu\Gioithieu.cshtml" />
+    <Content Include="Views\NhanViens_61134311\TimKiem.cshtml" />
+    <Content Include="Views\NhanViens_61134311\TimKiemNC.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -67,6 +67,58 @@ namespace BaiTap6_61134311.Controllers
             string NV = String.Concat("000", maNV.ToString());
             return "NV" + NV.Substring(maNV.ToString().Length - 1);
         }
+
+        public ActionResult TimKiem()
+        {
+            var nhanViens = db.NhanViens.Include(n => n.PhongBan);
+            return View(nhanViens.ToList());
+        }
+        [HttpPost]
+        public ActionResult TimKiem(string maNV)
+        {
+
+            //var nhanViens = db.NhanViens.SqlQuery("exec NhanVien_DS '"+maNV+"' ");
+            /// var nhanViens = db.NhanViens.SqlQuery("SELECT * FROM NhanVien WHERE MaNV='" + maNV + "'");
+            var nhanViens = db.NhanViens.Where(abc => abc.MaNV == maNV);
+            return View(nhanViens.ToList());
+        }
+        [HttpGet]
+
+        public ActionResult TimKiemNC(string maNV = "", string hoTen = "", string gioiTinh = "", string luongMin = "", string luongMax = "", string diaChi = "", string maPB = "")
+        {
+            string min = luongMin, max = luongMax;
+            if (gioiTinh != "1" && gioiTinh != "0")
+                gioiTinh = null;
+            ViewBag.maNV = maNV;
+            ViewBag.hoTen = hoTen;
+            ViewBag.gioiTinh = gioiTinh;
+            if (luongMin == "")
+            {
+                ViewBag.luongMin = "";
+                min = "0";
+            }
+            else
+            {
+                ViewBag.luongMin = luongMin;
+                min = luongMin;
+            }
+            if (max == "")
+            {
+                max = Int32.MaxValue.ToString();
+                ViewBag.luongMax = "";// Int32.MaxValue.ToString(); 
+            }
+            else
+            {
+                ViewBag.luongMax = luongMax;
+                max = luongMax;
+            }
+            ViewBag.diaChi = diaChi;
+            ViewBag.MaPB = new SelectList(db.PhongBans, "MaPB", "TenPB");
+            var nhanViens = db.NhanViens.SqlQuery("NhanVien_TimKiem'" + maNV + "','" + hoTen + "','" + gioiTinh + "','" + min + "','" + max + "',N'" + diaChi + "','" + maPB + "'");
+            if (nhanViens.Count() == 0)
+                ViewBag.TB = "Không có thông tin tìm kiếm.";
+            return View(nhanViens.ToList());
+        }
         public ActionResult Create()
         {
 
