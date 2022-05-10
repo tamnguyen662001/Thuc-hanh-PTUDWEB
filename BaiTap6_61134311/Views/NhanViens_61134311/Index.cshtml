@@ -5,6 +5,7 @@
     var grid = new WebGrid(Model, canPage: true, defaultSort: "TenNV", rowsPerPage: 5);
     string gtinh = "";
     int i = 0;
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 
@@ -155,9 +156,9 @@
 grid.Column("Luong","Tiền lương",format:@<text> @item.Luong.ToString("#,##0")</text>),
 grid.Column("DiaChi","Địa chỉ"),
 grid.Column("PhongBan.TenPB","Phòng ban"),
-grid.Column(format: (item) => Html.ActionLink("Cập nhật", "Edit", "NhanViens",new { id = item.MaNV },"NhanViensController")),
-grid.Column(format: (item) => Html.ActionLink("Xem chi tiết", "Details","NhanViens", new { id = item.MaNV },"NhanViensController")),
-grid.Column(format: (item) => Html.ActionLink("Xóa", "Delete","NhanViens", new { id = item.MaNV },"NhanVienViensController")),
+grid.Column(format: (item) => Html.ActionLink("Cập nhật", "Edit", "NhanViens_61134311",new { id = item.MaNV },"NhanViens_61134311Controller")),
+grid.Column(format: (item) => Html.ActionLink("Xem chi tiết", "Details","NhanViens_61134311", new { id = item.MaNV },"NhanViens_61134311Controller")),
+grid.Column(format: (item) => Html.ActionLink("Xóa", "Delete","NhanViens_61134311", new { id = item.MaNV },"NhanViens_61134311Controller")),
 grid.Column("Chức năng", format: @<text>
     <a href="@Url.Action("Edit",
                         new { id = item.MaNV})" class="edit-btn"><abbr title="Cập nhật dữ liệu"><img src="/images/edit.png" width="20" height="20" /></abbr></a>
@@ -171,4 +172,4 @@ grid.Column("Chức năng", format: @<text>
     </a>
 </text>),
 
-})
+}) 
