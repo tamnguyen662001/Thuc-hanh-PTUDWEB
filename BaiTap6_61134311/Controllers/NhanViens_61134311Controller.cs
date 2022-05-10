@@ -74,7 +74,7 @@ namespace BaiTap6_61134311.Controllers
             return View(nhanViens.ToList());
         }
         [HttpPost]
-        public ActionResult TimKiem(string maNV)
+        public ActionResult TimKiem_61134311(string maNV)
         {
 
             //var nhanViens = db.NhanViens.SqlQuery("exec NhanVien_DS '"+maNV+"' ");
@@ -84,7 +84,7 @@ namespace BaiTap6_61134311.Controllers
         }
         [HttpGet]
 
-        public ActionResult TimKiemNC(string maNV = "", string hoTen = "", string gioiTinh = "", string luongMin = "", string luongMax = "", string diaChi = "", string maPB = "")
+        public ActionResult TimKiemNC_61134311(string maNV = "", string hoTen = "", string gioiTinh = "", string luongMin = "", string luongMax = "", string diaChi = "", string maPB = "")
         {
             string min = luongMin, max = luongMax;
             if (gioiTinh != "1" && gioiTinh != "0")

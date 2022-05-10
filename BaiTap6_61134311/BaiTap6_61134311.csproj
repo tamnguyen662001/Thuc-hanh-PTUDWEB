@@ -128,7 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\GioithieuController.cs" />
+    <Compile Include="Controllers\Gioithieu_61134311Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NhanViens_61134311Controller.cs" />
     <Compile Include="Global.asax.cs">
@@ -227,9 +227,11 @@
     <Content Include="Views\NhanViens_61134311\Edit.cshtml" />
     <Content Include="Views\NhanViens_61134311\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Views\Gioithieu\Gioithieu.cshtml" />
     <Content Include="Views\NhanViens_61134311\TimKiem.cshtml" />
     <Content Include="Views\NhanViens_61134311\TimKiemNC.cshtml" />
+    <Content Include="Views\NhanViens_61134311\TimKiem_61134311.cshtml" />
+    <Content Include="Views\NhanViens_61134311\TimKiemNC_61134311.cshtml" />
+    <Content Include="Views\Gioithieu_61134311\Gioithieu_61134311.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

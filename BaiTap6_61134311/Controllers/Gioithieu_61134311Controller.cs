@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace BaiTap6_61134311.Controllers
 {
-    public class GioithieuController : Controller
+    public class Gioithieu_61134311Controller : Controller
     {
         // GET: Gioithieu
-        public ActionResult Gioithieu()
+        public ActionResult Gioithieu_61134311()
         {
             return View();
         }
